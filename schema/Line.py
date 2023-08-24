@@ -9,4 +9,7 @@ from .elements import Drift, SBend, Marker
 class Line(BaseModel):
     line: List[Union[Drift, SBend, Marker, 'Line']] = Field(..., discriminator='element')
 
+    class Config:
+        validate_assignment = True
+
 Line.update_forward_refs()

@@ -55,7 +55,21 @@ print(read_json_dict)
 read_json_model = Line(**read_json_dict)
 print(read_json_model)
 
-# json schema file for external validation
+# ensures correctness in construction, read-from-file
+# AND in interactive use
+try:
+    Drift(ds=-1.0)  # fails with: Input should be greater than 0
+except pydantic.ValidationError as e:
+    print(e)
+
+try:
+    d = Drift(ds=1.0)
+    d.ds = -1.0  # fails with: Input should be greater than 0
+except pydantic.ValidationError as e:
+    print(e)
+print(d)
+
+# json schema file for validation outside of pydantic
 with open('line.pmad.json.schema', 'w') as out_file:
     out_file.write(json.dumps(line.model_json_schema(), sort_keys = True, indent = 4))
 
