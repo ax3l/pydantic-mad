@@ -27,7 +27,7 @@ Let's use the element descriptions we love and do not spend time anymore on pars
 Well, while a powerful input language for its time... have you tried implementing a MAD-X reader for a complex accelerator lattice recently?
 [We have](https://github.com/ECP-WarpX/impactx/issues/104).
 [Here is the reference implementation for the very custom syntax parser in C.](https://github.com/MethodicalAcceleratorDesign/MAD-X/blob/master/src/mad_parse.c)
-Pretty custom, so you have to write a new parse for Python, Fortran, Julia, ...
+Pretty custom, so you have to write a new parser for Python, Fortran, Julia, ... and then you still need to validate the actual content.
 
 *What do you mean with "feature-complete"?*  
 MAD-X' (and other codes') powerful input supports more than defining beamline elements, lines, sequences, etc.
