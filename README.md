@@ -15,7 +15,7 @@ This project is a draft, designed for discussion of a potential accelerator beam
 
 There are many ways to describe beamlines out there, MAD-X, Elegant, SXF, IMPACT, ...
 All of them coupled to a *specific* code, most of them with a very custom syntax, non-unified conventions for units, and mixed with additional descriptions.
-Especially the custom syntax of many formats makes it pretty hard to implement in feature-complete way to exchange complex beamlines in the community.
+Especially the custom syntax of many formats makes it pretty hard to implement in a feature-complete way to exchange complex beamlines in the community.
 
 Let's change this.
 let's speak about concepts and implement a schema that is file agnostic and can be human-written, human-read, automatically be validated and is easily implemented in multiple programming languages. 
