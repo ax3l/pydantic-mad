@@ -34,7 +34,8 @@ MAD-X' (and other codes') powerful input supports more than defining beamline el
 It supports a custom syntax for limited scripting (e.g., loops, indirections), beam descriptions, code-specific inputs, etc.
 That is good for a single code, but cumbersome for exchanging structural data on a beamline itself.
 That scripting language is often used to describe complex beamlines.
-Implementing a parser for a custom syntax is significant work, which can be fully done by modern parsers and validators, readily available to the modern programmer across a variety of programming languages.
+Implementing a parser for a custom syntax is significant work, which can be fully avoided by using widely-used schemas.
+Modern validators of schemas are readily available to the programmer of today, across a variety of programming languages.
 
 
 ## Roadmap
