@@ -14,7 +14,7 @@ This project is a draft, designed for discussion of a potential accelerator beam
 ## Motivation
 
 There are many ways to describe beamlines out there, MAD-X, Elegant, SXF, IMPACT, ...
-All of them coupled to a *specific* code, most of them with a very custom syntax, non-unified conventions for units, and mixed with additional descriptions.
+All of them coupled to a *specific* code, most of them with a [very custom syntax](https://github.com/radiasoft/sirepo/tree/master/sirepo/package_data/static/json), non-unified conventions for units, and mixed with additional descriptions.
 Especially the custom syntax of many formats makes it pretty hard to implement in a feature-complete way to exchange complex beamlines in the community.
 
 Let's change this.
@@ -30,7 +30,7 @@ This will enable us to:
 
 *But don't we have MAD-X files?*  
 Well, while a powerful input language for its time... have you tried implementing a MAD-X reader for a complex accelerator lattice recently?
-[We have](https://github.com/ECP-WarpX/impactx/issues/104).
+[We have](https://github.com/ECP-WarpX/impactx/issues/104). [Others as well](https://github.com/radiasoft/sirepo/blob/8fcc5e530387c9b31e4d0f6206ff3816dc339425/sirepo/template/madx_converter.py).
 [Here is the reference implementation for the very custom syntax parser in C.](https://github.com/MethodicalAcceleratorDesign/MAD-X/blob/master/src/mad_parse.c)
 Pretty custom, so you have to write a new parser for Python, Fortran, Julia, ... and then you still need to validate the actual content.
 
