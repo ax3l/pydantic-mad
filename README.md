@@ -4,7 +4,7 @@ The PMAD (Pydantic <3 MAD) project explores a new, portable data schema for acce
 It modernizes user input and serialization of the universally beloved definitions of [MAD-X](https://mad.web.cern.ch/mad/webguide/manual.html#Pt2) beamline elements (and more).
 
 To define a schema, [Pydantic](https://docs.pydantic.dev) is used to serialize data classes to/from many modern file formats and to automatically validate expected attributes (the schema).
-Various modern file formats (e.g., JSON, TOML, XML, ...) are supported, which makes implementation in any modern programming language easy (e.g., Python, Julia, C++, Javascript, ...).
+Various modern file formats (e.g., JSON, TOML, XML, ...) are supported, which makes implementation in any modern programming language easy (e.g., Python, Julia, LUA, C++, Javascript, ...).
 
 ## Status
 
@@ -20,6 +20,11 @@ Especially the custom syntax of many formats makes it pretty hard to implement i
 Let's change this.
 let's speak about concepts and implement a schema that is file agnostic and can be human-written, human-read, automatically be validated and is easily implemented in multiple programming languages. 
 Let's use the element descriptions we love and do not spend time anymore on parsing differences between code conventions.
+
+This will enable us to:
+- exchange lattices between codes
+- use common GUIs for defining lattices
+- use common lattice visualization tools (2D, 3D, etc.)
 
 ### FAQ
 
