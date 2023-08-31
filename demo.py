@@ -30,6 +30,10 @@ line.line.extend([
     ])
 ])
 
+# doc strings
+print(SBend.__doc__)
+#help(SBend)  # more to explore for simplified output, like pydantic-autodoc in Sphinx
+
 # export
 print(f"Python:\n{line}")
 model = line.model_dump(mode='json', exclude_none=True)
