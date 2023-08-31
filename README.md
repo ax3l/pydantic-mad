@@ -48,7 +48,7 @@ Modern validators of schemas are readily available to the programmer of today, a
 Preliminary roadmap:
 
 1. Define the schema, using Pydantic  
-1.1. core features: elements, loops?, references?, delayed evaluation of variables for segments?
+1.1. core features: elements, loops?, references?, MAD-X optic-file like workflows & operations, delayed evaluation of variables for segments?
 2. Document well
 3. Reference implementation in Python  
 3.1. attract additional reference implementations in other languages.
