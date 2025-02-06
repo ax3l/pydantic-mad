@@ -1,3 +1,6 @@
+:warning: This project has evolved and moved :tada:  
+See the new [Python Implementation for the Particle Accelerator Lattice Standard (PALS)](https://github.com/campa-consortium/pals-python)!
+
 # Pydantic <3 MAD
 
 The PMAD (Pydantic <3 MAD) project explores a new, portable data schema for accelerator beamlines:
